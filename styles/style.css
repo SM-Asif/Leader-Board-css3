@@ -22,13 +22,17 @@ body{
 ----------------------------------*/
 main{
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }
 .container{
     background-color: #FFFFFF;
     width: 870px;
     height: 679px;
     padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+
 }
 
 .top-players{
@@ -93,4 +97,58 @@ main{
 .blog-author a{
     text-decoration: none;
     color: #562EFF;
+}
+
+/* -----------------------
+Courses Style section 
+--------------------------*/
+.course-container{
+    background-color: #FFFFFF;
+    width: 870px;
+    height: 362px;
+    padding: 30px;
+    border-radius: 5px;
+    margin-top: 21px;
+
+}
+.courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 24px;  
+}
+
+.courses .course-banner img{
+    width: 224px;
+    height: 104px;
+}
+
+.course{
+    border-radius: 13px;
+    padding: 10px;
+    box-shadow: 1px 2px 15px rgba(126, 126, 126, 0.322);
+        
+}
+.course-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.fa-star{
+    font-size: 12px;
+}
+
+.fa-star.filled{
+    color: #FFC014;
+}
+
+.fa-star.empty{
+    color:#AEAEAE;
+}
+
+.course-duration{
+    background-color: #FFE4E8;
+    border-radius: 14px;
+    padding-left: 7px;
+    padding-right: 7px;
 }
